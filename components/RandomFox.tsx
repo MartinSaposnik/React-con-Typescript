@@ -1,7 +1,7 @@
-const random = (): number => Math.floor(Math.random()*122) +1;
+type Props = {image: string}
 
-export const RandomFox = (): JSX.Element =>{ // forma explicita
-    const image :string = `https://randomfox.ca/images/${random()}.jpg`;
+export const RandomFox = ({ image }: Props): JSX.Element =>{ // forma explicita
+
     return <img 
     src ={image}
     width={320}
